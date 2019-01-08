@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpyFallMain">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/title_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="128dp"
+        android:layout_height="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spy" />
+
+    <TextView
+        android:id="@+id/playerCountPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/player_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/playCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCountPrompt"
+        app:layout_constraintStart_toEndOf="@+id/playerCountPrompt"
+        app:layout_constraintTop_toTopOf="@+id/playerCountPrompt" />
+
+    <ImageButton
+        android:id="@+id/playerUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/playCount"
+        app:layout_constraintEnd_toStartOf="@+id/playerDown"
+        app:layout_constraintTop_toTopOf="@+id/playCount"
+        app:srcCompat="@drawable/uparrow" />
+
+    <ImageButton
+        android:id="@+id/playerDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playerUp"
+        app:srcCompat="@drawable/downarrow" />
+
+    <TextView
+        android:id="@+id/timerCountPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/time_amt"
+        app:layout_constraintStart_toStartOf="@+id/playerCountPrompt"
+        app:layout_constraintTop_toBottomOf="@+id/playerCountPrompt" />
+
+    <TextView
+        android:id="@+id/timerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/timerCountPrompt"
+        app:layout_constraintEnd_toEndOf="@+id/playCount"
+        app:layout_constraintTop_toTopOf="@+id/timerCountPrompt" />
+
+    <ImageButton
+        android:id="@+id/timerUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/timeDown"
+        app:layout_constraintTop_toTopOf="@+id/timeDown"
+        app:srcCompat="@drawable/uparrow" />
+
+    <ImageButton
+        android:id="@+id/timeDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/timerCount"
+        app:layout_constraintEnd_toEndOf="@+id/playerDown"
+        app:layout_constraintTop_toTopOf="@+id/timerCount"
+        app:srcCompat="@drawable/downarrow" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="startGame"
+        android:text="@string/start_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/roleViewPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/role_view_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nameBut1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="reveal"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roleViewPrompt" />
+
+    <TextView
+        android:id="@+id/nameText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/nameBut1"
+        app:layout_constraintStart_toEndOf="@+id/nameBut1"
+        app:layout_constraintTop_toTopOf="@+id/nameBut1" />
+
+    <Button
+        android:id="@+id/nameBut2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="reveal"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/nameBut1"
+        app:layout_constraintTop_toBottomOf="@+id/nameBut1" />
+
+    <TextView
+        android:id="@+id/nameText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/nameBut2"
+        app:layout_constraintStart_toEndOf="@+id/nameBut2"
+        app:layout_constraintTop_toTopOf="@+id/nameBut2" />
+
+    <Button
+        android:id="@+id/nameBut3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="reveal"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/nameBut2"
+        app:layout_constraintTop_toBottomOf="@+id/nameBut2" />
+
+    <TextView
+        android:id="@+id/nameText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/nameBut3"
+        app:layout_constraintStart_toEndOf="@+id/nameBut3"
+        app:layout_constraintTop_toTopOf="@+id/nameBut3" />
+
+    <Button
+        android:id="@+id/nameBut4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="reveal"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/nameBut3"
+        app:layout_constraintTop_toBottomOf="@+id/nameBut3" />
+
+    <TextView
+        android:id="@+id/nameText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/nameBut4"
+        app:layout_constraintStart_toEndOf="@+id/nameBut4"
+        app:layout_constraintTop_toTopOf="@+id/nameBut4" />
+
+    <Button
+        android:id="@+id/nameBut5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="reveal"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/nameBut4"
+        app:layout_constraintTop_toBottomOf="@+id/nameBut4" />
+
+    <TextView
+        android:id="@+id/nameText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/nameBut5"
+        app:layout_constraintStart_toEndOf="@+id/nameBut5"
+        app:layout_constraintTop_toTopOf="@+id/nameBut5" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="startGame"
+        android:text="@string/start_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timePrompt"
+        app:layout_constraintStart_toEndOf="@+id/timePrompt"
+        app:layout_constraintTop_toTopOf="@+id/timePrompt" />
+
+    <TextView
+        android:id="@+id/timePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/timerPrompt"
+        app:layout_constraintStart_toStartOf="@+id/nameBut5"
+        app:layout_constraintTop_toBottomOf="@+id/nameBut5"
+        tools:text="@string/timerPrompt" />
+
+</android.support.constraint.ConstraintLayout>

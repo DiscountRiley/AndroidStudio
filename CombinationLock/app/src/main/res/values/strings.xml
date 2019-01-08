@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CombinationLock</string>
+    <string name="resetText">Reset</string>
+    <string name="unlockText">Unlock</string>
+    <string name="congratulations">You did it!</string>
+    <string name="debugButton">Debug</string>
+</resources>

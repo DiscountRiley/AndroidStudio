@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inputGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/inputGreeting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:hint="@string/inputHint"
+        app:layout_constraintStart_toEndOf="@+id/inputGreeting"
+        app:layout_constraintTop_toTopOf="@+id/inputGreeting" />
+
+    <TextView
+        android:id="@+id/inSpinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/inSpinText"
+        app:layout_constraintStart_toStartOf="@+id/inputGreeting"
+        app:layout_constraintTop_toBottomOf="@+id/inputGreeting" />
+
+    <Spinner
+        android:id="@+id/inputSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/inSpinText"
+        app:layout_constraintTop_toTopOf="@+id/inSpinText" />
+
+    <TextView
+        android:id="@+id/outSpinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/outSpinText"
+        app:layout_constraintStart_toStartOf="@+id/inSpinText"
+        app:layout_constraintTop_toBottomOf="@+id/inSpinText" />
+
+    <Spinner
+        android:id="@+id/outputSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/outSpinText"
+        app:layout_constraintTop_toTopOf="@+id/outSpinText" />
+
+    <TextView
+        android:id="@+id/outputGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="388dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputGreeting" />
+
+    <ImageView
+        android:id="@+id/inputImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputSpinner"
+        app:layout_constraintStart_toStartOf="@+id/inputSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/inputSpinner"
+        app:srcCompat="@drawable/human" />
+
+    <ImageView
+        android:id="@+id/outputImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/outputSpinner"
+        app:layout_constraintStart_toStartOf="@+id/outputSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/outputSpinner"
+        app:srcCompat="@drawable/human" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="startText">Enter Your Bill</string>
+    <string name="startText2">Enter Your Tip Percent</string>
+    <string name="displayTip">Tip:</string>
+    <string name="displayTotal">Total:</string>
+    <string-array name="tipAmounts">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+    </string-array>
+</resources>

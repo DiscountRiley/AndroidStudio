@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SpinnerProject</string>
+    <string name="title">Animal Age Converter</string>
+    <string name="inputGreeting">Inital Age:</string>
+    <string name="inputHint">years</string>
+    <string name="inSpinText">Current Age Units:</string>
+    <string name="outSpinText">Desired Age Units:</string>
+    <string name="output"> years converted to </string>
+    <string name="output2"> years equals: </string>
+    <string name="output3"> years.</string>
+    <string-array name="inputChoices">
+        <item>Human</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Horse</item>
+        <item>Ant</item>
+        <item>Turtle</item>
+    </string-array>
+    <string-array name="outputChoices">
+        <item>Human</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Horse</item>
+        <item>Ant</item>
+        <item>Turtle</item>
+    </string-array>
+</resources>
